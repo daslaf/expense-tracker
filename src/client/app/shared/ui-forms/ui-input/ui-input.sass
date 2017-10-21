@@ -1,0 +1,62 @@
+\:host
+  display: block
+  position: relative
+  margin: 16px 0
+
+  &.ui-focus,
+  &:not(.ui-empty)
+    /deep/ .ui-input-icon 
+      color: #31c9e2
+
+  
+  /deep/ 
+    input.ui-input,
+    input[uiInput]
+      height: 36px
+      display: block
+      width: 100%
+      box-shadow: 0px 2px 4px -2px rgba(0,0,0,.25)
+      background: #fbfbfb
+      border: 0
+      padding: 0 16px
+      font-size: 14px
+      transition: all .125s ease-in
+
+      &:focus,
+      &.ui-focus,
+      &:not(.ui-empty)
+        outline: none
+        box-shadow: 0px 2px 4px -2px rgba(135, 206, 235, .5)
+        background-color: #f8feff
+
+      &.ng-invalid.ng-dirty 
+        outline: none
+        box-shadow: 0px 2px 4px -2px rgba(135, 206, 235, .5)
+        background-color: #ffcace
+
+        & + .ui-input-icon__wrapper
+          .ui-input-icon
+            color: #ff3e4d
+
+    .ui-input-icon
+      display: flex
+      width: 100%
+      height: 100%
+      align-items: center
+      justify-content: flex-end
+      padding: 6px
+      color: #999
+      transition: all .125s ease-in
+
+      &.ui-left
+        justify-content: flex-start
+
+      &__wrapper
+        position: absolute
+        pointer-events: none
+        width: 100%
+        top: 0
+        height: 36px
+
+    &.ui-focus,
+    &:not(.ui-empty)

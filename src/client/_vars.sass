@@ -1,0 +1,12 @@
+
+@mixin contain-it()
+  &::before, &::after
+    content: ''
+    display: table
+    width: 100%
+
+@mixin base-shadow()
+  box-shadow: 0 2px 4px rgba(0,0,0,.125), 0 4px 8px rgba(0,0,0,.125)
+
+@mixin deep-shadow()
+  box-shadow: 0 2px 4px rgba(0,0,0,.125), 0 4px 8px rgba(0,0,0,.125), 0 8px 16px rgba(0,0,0,.125), 0 16px 32px rgba(0,0,0,.125)

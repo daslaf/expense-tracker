@@ -1,0 +1,15 @@
+@import './src/client/_vars'
+
+\:host 
+  &.ui-card
+    display: block
+    padding: 0 16px
+    background: #fff
+    border-radius: 2px
+    transition: box-shadow .195s ease-in
+
+    @include base-shadow()
+    @include contain-it()
+
+    // &:hover 
+    //   @include deep-shadow()
